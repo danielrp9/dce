@@ -1,0 +1,46 @@
+.section-divider {
+    margin: 50px 0;
+    text-align: center;
+    position: relative;
+}
+
+.section-divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #ddd;
+    z-index: -1;
+}
+
+.section-divider span {
+    background: #f8f9fa;
+    padding: 0 15px;
+    font-size: 1.2rem;
+    color: #6c757d;
+    font-weight: bold;
+}
+
+.hidden-desktop {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .hidden-desktop {
+        display: block !important;
+    }
+}
+
+
+.hero-icon img {
+    width: 120px; /* Ajuste o tamanho conforme necessário */
+    height: 120px; /* Mantém as proporções */
+    border-radius: 50%; /* Garante o formato circular */
+    object-fit: cover; /* Ajusta a imagem dentro do círculo */
+    margin: 0 auto 20px; /* Centraliza a imagem */
+    background-color: #fff; /* Define o fundo branco */
+    padding: 10px; /* Adiciona espaço interno para destacar o fundo branco */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
+}
