@@ -1,0 +1,22 @@
+.banner-evento {
+    margin: 20px auto; /* Espaçamento ao redor do banner */
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+.banner-evento img {
+    width: 80%; /* Faz a imagem ocupar toda a largura da section */
+    max-width: 800px; /* Limita a largura máxima em telas grandes */
+    height: auto; /* Garante que a altura seja proporcional à largura */
+    object-fit: contain; /* Exibe a imagem completa, sem cortar */
+    border-radius: 10px; /* Borda arredondada opcional */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+}
+
+/* Ajustes para telas grandes */
+@media (min-width: 1200px) {
+    .banner-evento img {
+        height: auto; /* Garante que a altura seja proporcional */
+        width: auto; /* Impede que a imagem estique */
+        max-height: 100%; /* Exibe a imagem completa */
+    }
+}
