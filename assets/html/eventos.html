@@ -23,10 +23,12 @@
                 font-size: 1.1rem;
                 color: #0056b3 !important;
                 transition: color 0.3s ease;
+                
             }
         
             .navbar .nav-link:hover {
                 color: #003d7a !important;
+                
             }
 
             .hero {
@@ -148,6 +150,16 @@
         .btn-secondary:hover {
             background-color: #5a6268;
         }
+        .partners img,
+.republics img {
+    height: 50px; /* Ajusta a altura para um tamanho de ícone */
+    width: auto; /* Mantém a proporção da imagem */
+    margin: 5px; /* Adiciona espaçamento entre os ícones */
+    object-fit: contain; /* Garante que a imagem fique dentro do espaço definido */
+    border-radius: 5px; /* Opcional: para bordas levemente arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Opcional: adiciona uma sombra leve */
+}
+
         </style>
     </head>
 
@@ -172,10 +184,11 @@
             </div>
         </div>
     </nav>
-    <section class="hero">
+   <!--
+     <section class="hero">
         <h1>Eventos do DCE</h1>
    
-    </section>
+    </section>-->
     
     <section class="events-section">
         <div class="events-gallery">
@@ -187,46 +200,31 @@
                     <p>Data: 26 de Abril de 2025</p>
                     <p>Venha celebrar a chegada dos calouros em grande estilo!</p>
                 </div>
+
+                 <!-- Ícones das atléticas parceiras -->
+            <div class="partners">
+                <h3>Atléticas Parceiras</h3>
+                <img src="../img/parceiros/atleticas/Logo The Bug.png" alt="Atlética 1">
+                <img src="../img/parceiros/atleticas/bode cara.png" alt="Atlética 2">
+                <img src="../img/parceiros/atleticas/Escudo Suprema.png" alt="Atlética 3">
+                <img src="../img/parceiros/atleticas/Sparta .png" alt="Atlética 4">
+                <img src="../img/parceiros/atleticas/cientistaLOUCO (1).png" alt="Atlética 5">
+                <img src="../img/parceiros/atleticas/Bárbaros.png" alt="Atlética 6">
+                <img src="../img/parceiros/atleticas/1679002847365_TURILOUCOS - 1.png" alt="Atlética 7">
+                <img src="../img/parceiros/atleticas/IMG-20250118-WA0100.jpg" alt="Atlética 8">
+                <img src="../img/parceiros/atleticas/IMG-20250119-WA0457.jpg" alt="Atlética 9">
+                <img src="../img/parceiros/atleticas/LOGO NOVA 4.png" alt="Atlética 10">
+                <img src="../img/parceiros/atleticas/LOGO FINAL.png" alt="Atlética 11">
+                <img src="../img/parceiros/atleticas/LOGO (1).png" alt="Atlética 12">
+                <!--<img src="../img/parceiros/atleticas/" alt="Atlética 13">-->
+            </div>
+            </div>
+        </section>
             </div>
         </div>
     </section>
     
-   <!-- Modificação no JavaScript para expandir o card -->
-<script>
-    function expandCard(title, banner, date, description, location) {
-        document.querySelector('.hero').style.display = 'none';
-        document.querySelector('.events-section').innerHTML = `
-            <div class="event-details">
-                <div class="event-banner-expanded">
-                    <img src="${banner}" alt="Banner Evento" class="banner-expanded">
-                </div>
-                <div class="event-description">
-                    <h2>${title}</h2>
-                    <p>${description}</p>
-                    <div class="row">
-                        <div class="col-6 text-start"><strong>Data:</strong> ${date}</div>
-                        <div class="col-6 text-end"><strong>Local:</strong> ${location}</div>
-                    </div>
-                    <h4 class="mt-4">Parceiros</h4>
-                    <div class="partners">
-                        <h5>Atléticas (13):</h5>
-                        <img src="assets/img/atletica1.png" alt="Atlética 1">
-                        <img src="assets/img/atletica2.png" alt="Atlética 2">
-                        <!-- Adicione mais logos de atléticas -->
-                        <h5 class="mt-3">Repúblicas (8):</h5>
-                        <img src="assets/img/republica1.png" alt="República 1">
-                        <img src="assets/img/republica2.png" alt="República 2">
-                        <!-- Adicione mais logos de repúblicas -->
-                        <h5 class="mt-3 text-danger">Empresa (1):</h5>
-                        <img src="assets/img/agito.png" alt="Empresa Agito" class="highlighted-partner">
-                    </div>
-                    <a href="https://www.sympla.com.br/" class="btn btn-primary mt-3" target="_blank">Comprar Ingressos</a>
-                    <button class="btn btn-secondary mt-3" onclick="window.location.reload()">Voltar</button>
-                </div>
-            </div>
-        `;
-    }
-</script>
+
 
     
 

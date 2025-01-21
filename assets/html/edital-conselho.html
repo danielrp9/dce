@@ -82,6 +82,18 @@
             background-color: #f8f9fa;
             padding: 20px 0;
         }
+
+           /* Destaque para a etapa atual */
+    .current-step {
+        background-color: #d9e4f0;
+        border-left: 4px solid #28a745;
+        padding: 10px;
+        border-radius: 4px;
+    }
+    .current-step span {
+        font-weight: bold;
+        color: #28a745;
+    }
     </style>
 </head>
 <body>
@@ -117,18 +129,46 @@
     <h2 class="section-title">Cronograma do Processo Eleitoral</h2>
     <h3>Publicações</h3>
     <ul class="timeline">
-        <li>
-            <span>13/01/2025:</span> <a href="https://drive.google.com/file/d/1EtHOwdxhpTiAszFVk6b-ZEWYpk5I2xlU/view?usp=sharing" target="_blank">EDITAL 01/2025 - Eleições para Conselhos Superiores</a>
+        <!-- Destaque para o edital publicado -->
+        <li class="current-step">
+            <span>13/01/2025:</span> <a href="https://drive.google.com/file/d/1EtHOwdxhpTiAszFVk6b-ZEWYpk5I2xlU/view?usp=sharing" target="_blank">EDITAL 01/2025 - Eleições para Conselhos Superiores (Edital Retificado)</a>
         </li>
-        <li>
-            <span>13/01/25 - 01/02/25:</span> Envio de manifestações de interesse por parte dos candidatos de 01/02 até às 23h59 do dia 18/01 através do formulário disponível: <a href="https://forms.gle/H4MgMA2Qs7WYRwat8" target="_blank">Formulário</a>
+        <!-- Destaque para a etapa atual do envio de manifestação -->
+        <li class="current-step">
+            <span>13/01/25 - 01/02/25:</span> Envio de manifestações de interesse por parte dos candidatos de 13/01 até às 23h59 do dia 01/02 através do formulário disponível: <a href="https://forms.gle/H4MgMA2Qs7WYRwat8" target="_blank">Formulário</a>
         </li>
     </ul>
 
-    <h3>Contato</h3>
-    <p>Em caso de dúvidas, entre em contato pelo email: <a href="mailto:dce@ufvjm.edu.br">dce@ufvjm.edu.br</a></p>
-</section>
-
+    <ul class="timeline">
+        <li>
+            <span>02/02/2025:</span> Deferimento e divulgação das inscrições.
+        </li>
+        <li>
+            <span>03/02/2025 - 07/02/2025:</span> Prazo para recurso referente ao deferimento das inscrições, via preenchimento de formulário eletrônico: <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXmZN1S3sppi28epapK5o1O6nnH6UAS19pIAQtc__zmPbYsg/viewform?usp=pp_url" target="_blank">Formulário de Recurso</a>.
+        </li>
+        <li>
+            <span>08/02/2025:</span> Divulgação das inscrições, após avaliação dos recursos, até às 19h.
+        </li>
+        <li>
+            <span>08/02/2025 - 18/02/2025:</span> Campanha (10 dias), iniciando às 19h01 do dia 08/02 até às 23h59 do dia 18/02.
+        </li>
+        <li>
+            <span>19/02/2025:</span> Eleições via sistema eVoto, das 08h às 21h.
+        </li>
+        <li>
+            <span>20/02/2025:</span> Divulgação do resultado.
+        </li>
+        <li>
+            <span>21/02/2025:</span> Prazo para recurso referente ao resultado da eleição, via preenchimento de formulário eletrônico: <a href="https://docs.google.com/forms/d/e/1FAIpQLScLSJG8i2R7WTYBuVvtmk9VspmdvAVgcRAtBTujP-oJy3nU3w/viewform?usp=pp_url" target="_blank">Formulário de Recurso</a> até às 20h.
+        </li>
+        <li>
+            <span>22/02/2025:</span> Julgamento dos recursos, caso haja, até às 18h.
+        </li>
+        <li>
+            <span>23/02/2025:</span> Divulgação e homologação do resultado final.
+        </li>
+    </ul>
+    
 <!-- Rodapé -->
 <footer id="contato">
     <div class="container text-center">
