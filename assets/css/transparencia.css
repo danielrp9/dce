@@ -1,0 +1,33 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+.navbar .nav-link {
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #0056b3 !important;
+    transition: color 0.3s ease;
+}
+.navbar .nav-link:hover {
+    color: #003f8a !important;
+}
+.hero {
+    background-color: #003FA3;
+    text-align: center;
+    padding: 60px 20px;
+    color: azure;
+}
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+}
+.table td, .table th {
+    vertical-align: middle;
+}
+.total-section {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0056b3;
+}
