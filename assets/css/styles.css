@@ -79,10 +79,17 @@ footer a {
     .navbar-nav {
         text-align: center;
         width: 100%;
+        /*border-top: 1px solid #ddd; /* Linha acima do primeiro item */
     }
 
     .navbar-nav .nav-item {
         display: flex;
         justify-content: center;
+        border-bottom: 1px solid #ddd; /* Linha separadora */
+        padding: 10px 0; /* Espaçamento */
+    }
+
+    .navbar-nav .nav-item:last-child {
+        border-bottom: none; /* Remove a linha do último item */
     }
 }
