@@ -143,6 +143,16 @@ body {
     object-fit: contain;
 }
 
+.event-unavailable {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+
+
 
 </style>
     </head>
@@ -188,7 +198,8 @@ body {
                 <div class="event-card shadow-lg rounded-3 p-3" onclick="expandCard('olimpiadas')">
                     <img src="../img/banner/olimpiadas.jpg" class="img-fluid rounded-3" alt="Olimpíadas">
                     <h3 class="mt-3">Olimpíadas</h3>
-                    <p><strong>Data:</strong> Ainda não definido.</p>
+                    <p><strong></strong> <span class="event-unavailable">Evento ainda não disponível</span></p>
+
                     <p><strong>Cidades:</strong> Diamantina, Mucuri, Unaí e Janaúba</p>
                 </div>
             </div>
@@ -199,7 +210,8 @@ body {
                 <div class="event-card shadow-lg rounded-3 p-3" onclick="expandCard('trotao')">
                     <img src="../img/banner/carregando.jpg" class="img-fluid rounded-3" alt="Trotão">
                     <h3 class="mt-3">Trotão 2025</h3>
-                    <p><strong>Data:</strong> Ainda não definido.</p>
+                    <p><strong></strong> <span class="event-unavailable">Evento ainda não disponível</span></p>
+
                     <p><strong>Cidade:</strong> Diamantina</p>
                 </div>
             </div>
