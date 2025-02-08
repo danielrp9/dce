@@ -32,6 +32,24 @@ body {
     margin: 0 auto 20px;
 }
 
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre os ícones */
+    margin-top: 20px;
+}
+
+.social-icon {
+    width: 40px;  /* Tamanho pequeno */
+    height: 40px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Efeito de aumento ao passar o mouse */
+    opacity: 0.8;  /* Diminui a opacidade quando hover */
+}
+
 .section-title {
     text-align: center;
     margin: 40px 0 20px;
@@ -93,3 +111,10 @@ footer a {
         border-bottom: none; /* Remove a linha do último item */
     }
 }
+
+
+
+
+ 
+
+
